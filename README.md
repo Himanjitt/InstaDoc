@@ -58,6 +58,27 @@ Before you begin, ensure you have the following installed:
 - [npm](https://www.npmjs.com/) (usually comes with Node.js) or [Yarn](https://yarnpkg.com/)
 - [MongoDB](https://www.mongodb.com/try/download/community) (ensure it's running locally or you have a cloud instance URI)
 
+## 📷 Screenshots
+
+### 🏠 1. Opening Link / Home Page
+![Image](https://github.com/user-attachments/assets/82c9cbce-2871-4523-b4da-9460f503e0e3)
+
+### 📝 2. Signup Page
+![Image](https://github.com/user-attachments/assets/8375b1ff-a5f8-48a5-a00b-2e47cc2bef19)
+
+### 🔍 3. Find Doctor
+![Image](https://github.com/user-attachments/assets/b2bb685d-e809-4abe-bd82-fb70ef86ff7c)
+
+### 👨‍⚕️ 4. Book Appointment - Choose Doctor
+![Image](https://github.com/user-attachments/assets/cd32efec-ae7d-4301-a7d2-df887d3a0a69)
+
+### 🧾 5. Fill Appointment Details
+![Image](https://github.com/user-attachments/assets/b52617dc-c593-4f3e-a629-8b0591b9f75d)
+
+### 🔔 6. Check Notifications
+![Image](https://github.com/user-attachments/assets/c04a651c-f663-47e6-898a-79fe573bc0d7)
+
+
 ## Installation & Setup
 
 1.  **Clone the repository:**
@@ -136,24 +157,4 @@ Before you begin, ensure you have the following installed:
 - `npm start`: Runs the app in development mode.
 - `npm run build`: Builds the app for production to the `build` folder.
 
-
-## 📷 Screenshots
-
-### 🏠 1. Opening Link / Home Page
-![Image](https://github.com/user-attachments/assets/82c9cbce-2871-4523-b4da-9460f503e0e3)
-
-### 📝 2. Signup Page
-![Image](https://github.com/user-attachments/assets/8375b1ff-a5f8-48a5-a00b-2e47cc2bef19)
-
-### 🔍 3. Find Doctor
-![Image](https://github.com/user-attachments/assets/b2bb685d-e809-4abe-bd82-fb70ef86ff7c)
-
-### 👨‍⚕️ 4. Book Appointment - Choose Doctor
-![Image](https://github.com/user-attachments/assets/cd32efec-ae7d-4301-a7d2-df887d3a0a69)
-
-### 🧾 5. Fill Appointment Details
-![Image](https://github.com/user-attachments/assets/b52617dc-c593-4f3e-a629-8b0591b9f75d)
-
-### 🔔 6. Check Notifications
-![Image](https://github.com/user-attachments/assets/c04a651c-f663-47e6-898a-79fe573bc0d7)
 ---
