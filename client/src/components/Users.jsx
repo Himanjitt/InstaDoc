@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Empty from "./Empty";
 import fetchData from "../helper/apiCall";
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
+axios.defaults.baseURL = "https://instadoc-backend.onrender.com/api";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -87,7 +87,6 @@ const Users = () => {
               >
                 <option value="all">All</option>
                 <option value="firstname">Name</option>
-
               </select>
             </div>
 

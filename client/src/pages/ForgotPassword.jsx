@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom"; 
+import { NavLink, useNavigate } from "react-router-dom";
 import "../styles/register.css";
 import Navbar from "../components/Navbar";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
+axios.defaults.baseURL = "https://instadoc-backend.onrender.com/api";
 
 function ForgotPassword() {
   const [formDetails, setFormDetails] = useState({
     email: "",
   });
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const inputChange = (e) => {
     const { name, value } = e.target;
@@ -33,7 +33,7 @@ function ForgotPassword() {
       const response = await axios.post("/user/forgotpassword", { email });
       if (response.status === 200) {
         toast.success("Password reset email sent successfully!!!!!");
-        navigate('/login'); 
+        navigate("/login");
       } else {
         toast.error("Failed to send password reset email");
       }

@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
+axios.defaults.baseURL = "https://instadoc-backend.onrender.com/api";
 
 function Register() {
   const [file, setFile] = useState("");
@@ -17,7 +17,7 @@ function Register() {
     email: "",
     password: "",
     confpassword: "",
-    role: "", 
+    role: "",
   });
   const navigate = useNavigate();
 
@@ -56,11 +56,19 @@ function Register() {
   const formSubmit = async (e) => {
     try {
       e.preventDefault();
-  
+
       if (loading) return;
       if (file === "") return;
-      const { firstname, lastname, email, password, confpassword } = formDetails;
-      if (!firstname || !lastname || !email || !password || !confpassword || !selectedRole) {
+      const { firstname, lastname, email, password, confpassword } =
+        formDetails;
+      if (
+        !firstname ||
+        !lastname ||
+        !email ||
+        !password ||
+        !confpassword ||
+        !selectedRole
+      ) {
         return toast.error("Input field should not be empty");
       } else if (firstname.length < 3) {
         return toast.error("First name must be at least 3 characters long");
@@ -71,7 +79,7 @@ function Register() {
       } else if (password !== confpassword) {
         return toast.error("Passwords do not match");
       }
-  
+
       await toast.promise(
         axios.post("/user/register", {
           firstname,
@@ -91,7 +99,6 @@ function Register() {
       return navigate("/login");
     } catch (error) {}
   };
-  
 
   return (
     <>

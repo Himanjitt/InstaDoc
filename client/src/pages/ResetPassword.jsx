@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
+axios.defaults.baseURL = "https://instadoc-backend.onrender.com/api";
 
 function ResetPassword() {
   const { id, token } = useParams();
@@ -23,11 +23,13 @@ function ResetPassword() {
     }
 
     try {
-      const response = await axios.post(`/user/resetpassword/${id}/${token}`, { password });
+      const response = await axios.post(`/user/resetpassword/${id}/${token}`, {
+        password,
+      });
 
       if (response.status === 200) {
         toast.success("Password reset successfully");
-        navigate('/login');
+        navigate("/login");
       } else {
         toast.error("Failed to reset password. Please try again.");
       }
@@ -41,7 +43,7 @@ function ResetPassword() {
     <>
       <Navbar />
       <section className="register-section flex-center">
-      <div className="register-container flex-center">
+        <div className="register-container flex-center">
           <h2 className="form-heading">Reset Password</h2>
           <form onSubmit={handleFormSubmit} className="register-form">
             <input

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
+axios.defaults.baseURL = "https://instadoc-backend.onrender.com/api";
 
 const ApplyDoctor = () => {
   const navigate = useNavigate();
@@ -86,11 +86,7 @@ const ApplyDoctor = () => {
               value={formDetails.fees}
               onChange={inputChange}
             />
-            <button
-              type="submit"
-              className="btn form-btn"
-              onClick={btnClick}
-            >
+            <button type="submit" className="btn form-btn" onClick={btnClick}>
               apply
             </button>
           </form>
