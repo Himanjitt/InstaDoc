@@ -13,10 +13,16 @@ const port = process.env.PORT || 5015;
 
 //app.use(cors());
 
-app.use(cors({
-  origin: ['http://localhost:3000', 'https://instadoc-frontend.onrender.com'], // add your deployed frontend if needed
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://instadoc-frontend.onrender.com",
+      "https://insta-doc-ten.vercel.app", // Your Vercel deployment
+    ],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 app.use("/api/user", userRouter);
