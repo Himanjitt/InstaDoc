@@ -50,6 +50,41 @@ InstaDoc is a full-stack web application designed to streamline the process of b
 - Bcrypt.js (for password hashing)
 - Multer (for file uploads on the server)
 
+## 📷 Screenshots
+
+<table>
+  <tr>
+    <td>
+      <strong>🏠 Home Page</strong><br/>
+      <img src="https://github.com/user-attachments/assets/82c9cbce-2871-4523-b4da-9460f503e0e3" width="400"/>
+    </td>
+    <td>
+      <strong>📝 Signup Page</strong><br/>
+      <img src="https://github.com/user-attachments/assets/8375b1ff-a5f8-48a5-a00b-2e47cc2bef19" width="400"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>🔍 Find Doctor</strong><br/>
+      <img src="https://github.com/user-attachments/assets/b2bb685d-e809-4abe-bd82-fb70ef86ff7c" width="400"/>
+    </td>
+    <td>
+      <strong>👨‍⚕️ Choose Doctor</strong><br/>
+      <img src="https://github.com/user-attachments/assets/cd32efec-ae7d-4301-a7d2-df887d3a0a69" width="400"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>🧾 Fill Details</strong><br/>
+      <img src="https://github.com/user-attachments/assets/b52617dc-c593-4f3e-a629-8b0591b9f75d" width="400"/>
+    </td>
+    <td>
+      <strong>🔔 Check Notifications</strong><br/>
+      <img src="https://github.com/user-attachments/assets/c04a651c-f663-47e6-898a-79fe573bc0d7" width="400"/>
+    </td>
+  </tr>
+</table>
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
