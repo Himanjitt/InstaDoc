@@ -15,11 +15,7 @@ const port = process.env.PORT || 5015;
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "https://instadoc-frontend.onrender.com",
-      "https://insta-doc-ten.vercel.app", // Your Vercel deployment
-    ],
+    origin: ["http://localhost:3000", "https://insta-doc-ten.vercel.app"],
     credentials: true,
   })
 );
