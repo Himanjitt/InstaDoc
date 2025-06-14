@@ -50,14 +50,6 @@ InstaDoc is a full-stack web application designed to streamline the process of b
 - Bcrypt.js (for password hashing)
 - Multer (for file uploads on the server)
 
-## Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- [Node.js](https://nodejs.org/) (v14.x or higher recommended)
-- [npm](https://www.npmjs.com/) (usually comes with Node.js) or [Yarn](https://yarnpkg.com/)
-- [MongoDB](https://www.mongodb.com/try/download/community) (ensure it's running locally or you have a cloud instance URI)
-
 ## 📷 Screenshots
 
 ### 🏠 1. Opening Link / Home Page
@@ -77,6 +69,15 @@ Before you begin, ensure you have the following installed:
 
 ### 🔔 6. Check Notifications
 ![Image](https://github.com/user-attachments/assets/c04a651c-f663-47e6-898a-79fe573bc0d7)
+
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14.x or higher recommended)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js) or [Yarn](https://yarnpkg.com/)
+- [MongoDB](https://www.mongodb.com/try/download/community) (ensure it's running locally or you have a cloud instance URI)
 
 
 ## Installation & Setup
