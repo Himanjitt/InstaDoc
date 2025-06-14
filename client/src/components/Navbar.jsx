@@ -9,7 +9,7 @@ import { RxCross1 } from "react-icons/rx";
 import jwt_decode from "jwt-decode";
 import axios from "axios";
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
+axios.defaults.baseURL = "https://instadoc-backend.onrender.com/api";
 
 const Navbar = () => {
   const [iconActive, setIconActive] = useState(false);

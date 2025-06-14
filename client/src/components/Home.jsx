@@ -31,7 +31,7 @@ import {
   BsPeopleFill,
 } from "react-icons/bs";
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
+axios.defaults.baseURL = "https://instadoc-backend.onrender.com/api";
 
 const Home = () => {
   const [userCount, setUserCount] = useState(0);
