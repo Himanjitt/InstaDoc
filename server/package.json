@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Himanjit Tamuli",
+  "author": "Teams NITs",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
