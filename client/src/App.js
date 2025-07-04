@@ -3,15 +3,13 @@ import "./styles/app.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import ForgotPassword from "./pages/ForgotPassword";
-import ResetPassword from "./pages/ResetPassword";
 import { Toaster } from "react-hot-toast";
 import { Protected, Public, Admin } from "./middleware/route";
 import React, { lazy, Suspense } from "react";
 import Loading from "./components/Loading";
 import Dashboard from "./pages/Dashboard";
 
-const Aprofile = lazy(()=>import("./components/Aprofile"))
+const Aprofile = lazy(() => import("./components/Aprofile"));
 const Home = lazy(() => import("./pages/Home"));
 const Appointments = lazy(() => import("./pages/Appointments"));
 const Doctors = lazy(() => import("./pages/Doctors"));
@@ -28,11 +26,8 @@ function App() {
     <Router>
       <Toaster />
       <Suspense fallback={<Loading />}>
-
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/forgotpassword" element={<ForgotPassword />} />
-          <Route path="/resetpassword/:id/:token" element={<ResetPassword />} />
           <Route
             path="/register"
             element={
@@ -87,7 +82,7 @@ function App() {
             path="/dashboard/home"
             element={
               <Admin>
-                <Dashboard type ={"home"} />
+                <Dashboard type={"home"} />
               </Admin>
             }
           />

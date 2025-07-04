@@ -119,9 +119,6 @@ function Login() {
               sign in
             </button>
           </form>
-          <NavLink className="login-link" to={"/forgotpassword"}>
-            Forgot Password
-          </NavLink>
           <p>
             Not a user?{" "}
             <NavLink className="login-link" to={"/register"}>
