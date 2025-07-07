@@ -38,7 +38,6 @@ InstaDoc is a full-stack web application designed to streamline the process of b
 - Redux Toolkit (for state management)
 - React Router (for navigation)
 - Axios (for API calls)
-- Firebase
 - Cloudinary (for image uploads)
 
 **Server-side (Backend):**
@@ -48,7 +47,6 @@ InstaDoc is a full-stack web application designed to streamline the process of b
 - MongoDB (with Mongoose ODM for database)
 - JSON Web Tokens (JWT) (for authentication)
 - Bcrypt.js (for password hashing)
-- Multer (for file uploads on the server)
 
 ## 📷 Screenshots
 
